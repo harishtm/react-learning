@@ -5,6 +5,8 @@ import Car from './components/Car.jsx';
 import DisplayCar from './components/DisplayCar.jsx';
 import Component1 from './components/contextDemo/Component1.jsx';
 import MyRef from './components/refDemo/ref1.jsx'
+import Todos from './components/reducerDemo/Todos.jsx';
+import CacheTodo from './components/callbackDemo/main.jsx';
 
 
 function App() {
@@ -34,6 +36,10 @@ function App() {
       <Component1/>
       <hr/>
       <MyRef/>
+      <hr/>
+      <Todos/>
+      <hr/>
+      <CacheTodo/>
     </>
   );
 }
