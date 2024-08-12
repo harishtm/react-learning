@@ -7,6 +7,7 @@ import Component1 from './components/contextDemo/Component1.jsx';
 import MyRef from './components/refDemo/ref1.jsx'
 import Todos from './components/reducerDemo/Todos.jsx';
 import CacheTodo from './components/callbackDemo/main.jsx';
+import CalculateFactorial from './components/memoDemo/Memoize.jsx';
 
 
 function App() {
@@ -40,6 +41,8 @@ function App() {
       <Todos/>
       <hr/>
       <CacheTodo/>
+      <hr/>
+      <CalculateFactorial/>
     </>
   );
 }
