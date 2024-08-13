@@ -8,6 +8,7 @@ import MyRef from './components/refDemo/ref1.jsx'
 import Todos from './components/reducerDemo/Todos.jsx';
 import CacheTodo from './components/callbackDemo/main.jsx';
 import CalculateFactorial from './components/memoDemo/Memoize.jsx';
+import FetchTodos from './components/customHook/index.jsx';
 
 
 function App() {
@@ -43,6 +44,8 @@ function App() {
       <CacheTodo/>
       <hr/>
       <CalculateFactorial/>
+      <hr/>
+      <FetchTodos/>
     </>
   );
 }
