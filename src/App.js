@@ -9,6 +9,7 @@ import Todos from './components/reducerDemo/Todos.jsx';
 import CacheTodo from './components/callbackDemo/main.jsx';
 import CalculateFactorial from './components/memoDemo/Memoize.jsx';
 import FetchTodos from './components/customHook/index.jsx';
+import Counter from './components/Counter.jsx';
 
 
 function App() {
@@ -46,6 +47,8 @@ function App() {
       <CalculateFactorial/>
       <hr/>
       <FetchTodos/>
+      <hr/>
+      <Counter/>
     </>
   );
 }

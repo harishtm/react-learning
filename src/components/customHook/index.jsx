@@ -1,10 +1,12 @@
 import React from "react";
+import { slice } from "lodash";
 import useFetch from "./utils";
 
 const FetchTodos = () => {
     // const [data, setData] = useState(null);
 
-    const [data] = useFetch("https://jsonplaceholder.typicode.com/todos")
+    let [data] = useFetch("https://jsonplaceholder.typicode.com/todos")
+    data = slice(data, 0, 5)
 
     return(
         <>
@@ -12,7 +14,7 @@ const FetchTodos = () => {
                 data &&
                 data.map((item) => {
                     return (
-                        <ul>
+                        <ul key={item.id}>
                             <li key={item.id}>{item.title}</li>
                         </ul>
                     )
