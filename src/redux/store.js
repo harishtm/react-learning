@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { currencyReducer } from './reducers/currencyReducer';
+import { counterReducer } from './reducers/counterReducer';
 
 
 const appStore = configureStore({
-    reducer: currencyReducer,
+    reducer: counterReducer,
   })
 
 

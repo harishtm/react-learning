@@ -1,7 +1,7 @@
 import { INCREMENT, DECREMENT } from "../actions/counterAction";
 
 
-const currencyReducer = (state = 0, action) => {
+const counterReducer = (state = 0, action) => {
     switch (action.type) {
         case INCREMENT:
             return state + 1;
@@ -12,4 +12,4 @@ const currencyReducer = (state = 0, action) => {
     }
 };
 
-export { currencyReducer };
+export { counterReducer };
